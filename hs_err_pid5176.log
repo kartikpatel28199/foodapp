@@ -1,0 +1,190 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb8f9da6a3, pid=5176, tid=1044
+#
+# JRE version:  (11.0.10+8) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11.0.10+8-LTS-162, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x1ca6a3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: c:\Users\kartik\.vscode\extensions\salesforce.salesforce-vscode-slds-1.4.8\lsp-0.0.13-executable.jar --PORT=62118
+
+Host: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz, 8 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1202)
+Time: Sun Sep 26 19:29:53 2021 India Standard Time elapsed time: 0.029054 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002095a2ba000):  JavaThread "Unknown thread" [_thread_in_vm, id=1044, stack(0x0000003914400000,0x0000003914500000)]
+
+Stack: [0x0000003914400000,0x0000003914500000],  sp=0x00000039144fec40,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1ca6a3]
+V  [jvm.dll+0x1c88c3]
+V  [jvm.dll+0x34c48b]
+V  [jvm.dll+0x70d6b0]
+V  [jvm.dll+0x3b584f]
+V  [jvm.dll+0x3b7951]
+C  [jli.dll+0x520b]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x0000bc3d704c58a4, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x00000039144fec40, RBP=0x0000000000000000, RSI=0x000002095a2ba000, RDI=0x0000000000000000
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x0000000000000000, R11=0x00000039144fe9f0
+R12=0x0000000000000000, R13=0x00007ffb8fdd1b30, R14=0x000002095815fde8, R15=0x00000039144ff698
+RIP=0x00007ffb8f9da6a3, EFLAGS=0x0000000000010256
+
+Top of Stack: (sp=0x00000039144fec40)
+0x00000039144fec40:   00000209581669d0 00007ffbfaf632f0
+0x00000039144fec50:   00000039144ff698 000002095815fde8
+0x00000039144fec60:   0000000000000000 00000039144fee70
+0x00000039144fec70:   0000a34064703538 00007ffb8fdd1b30
+0x00000039144fec80:   0000000000000400 00000039144ff698
+0x00000039144fec90:   000002095815fde8 00007ffb8fdd1b30
+0x00000039144feca0:   0000000000000000 00007ffbf3030000
+0x00000039144fecb0:   00007ffb90043990 0000000000000000
+0x00000039144fecc0:   00007ffb8f9d8767 00007ffbfaf353dc
+0x00000039144fecd0:   0000000000000000 00007ffb8fe4a3c3
+0x00000039144fece0:   0000bc3d704c58a4 000002095815fde8
+0x00000039144fecf0:   00007ffb00000000 00007ffb8fdd1b30
+0x00000039144fed00:   000002095a2ba000 00000039144fee20
+0x00000039144fed10:   0000000000000000 00007ffb8f9d88c3
+0x00000039144fed20:   00007ffbf52b0000 00007ffbf303d0ac
+0x00000039144fed30:   00000039144fee20 000002095a2ba000 
+
+Instructions: (pc=0x00007ffb8f9da6a3)
+0x00007ffb8f9da683:   00 48 33 c4 48 89 84 24 a0 00 00 00 48 8b e9 48
+0x00007ffb8f9da693:   c7 c3 ff ff ff ff 0f 1f 80 00 00 00 00 48 ff c3
+0x00007ffb8f9da6a3:   80 3c 0b 00 75 f7 33 f6 c6 44 24 30 01 40 38 35
+0x00007ffb8f9da6b3:   73 07 86 00 74 17 40 38 35 c0 6d 85 00 75 0e 33 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000002095815fb60, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb8ff2275d]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+[error occurred during error reporting (printing compressed oops mode), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb8ff38c07]
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff737f50000 - 0x00007ff737f5f000 	C:\Program Files\Java\jdk-11.0.10\bin\java.exe
+0x00007ffbfd810000 - 0x00007ffbfda05000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffbfc990000 - 0x00007ffbfca4e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffbfaf30000 - 0x00007ffbfb1f9000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffbfb650000 - 0x00007ffbfb750000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffbf5360000 - 0x00007ffbf5375000 	C:\Program Files\Java\jdk-11.0.10\bin\VCRUNTIME140.dll
+0x00007ffbf5320000 - 0x00007ffbf5338000 	C:\Program Files\Java\jdk-11.0.10\bin\jli.dll
+0x00007ffbfb970000 - 0x00007ffbfba1c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffbfb860000 - 0x00007ffbfb8fe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffbfba90000 - 0x00007ffbfbb2b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffbfc4a0000 - 0x00007ffbfc5ca000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffbfbb30000 - 0x00007ffbfbcd1000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffbfb590000 - 0x00007ffbfb5b2000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffbe31d0000 - 0x00007ffbe346a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffbfc470000 - 0x00007ffbfc49b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffbfb750000 - 0x00007ffbfb85b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffbfb470000 - 0x00007ffbfb50d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffbf50c0000 - 0x00007ffbf50ca000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffbfbce0000 - 0x00007ffbfbd10000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffbd1970000 - 0x00007ffbd1a0b000 	C:\Program Files\Java\jdk-11.0.10\bin\msvcp140.dll
+0x00007ffb8f810000 - 0x00007ffb9030b000 	C:\Program Files\Java\jdk-11.0.10\bin\server\jvm.dll
+0x00007ffbfb960000 - 0x00007ffbfb968000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffbda0b0000 - 0x00007ffbda0d7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffbe35c0000 - 0x00007ffbe35c9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffbfba20000 - 0x00007ffbfba8b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffbf9770000 - 0x00007ffbf9782000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffbf5620000 - 0x00007ffbf5630000 	C:\Program Files\Java\jdk-11.0.10\bin\verify.dll
+0x00007ffbf8ba0000 - 0x00007ffbf8d84000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffbdf3c0000 - 0x00007ffbdf3ec000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffbfb5c0000 - 0x00007ffbfb643000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffbf3030000 - 0x00007ffbf3058000 	C:\Program Files\Java\jdk-11.0.10\bin\java.dll
+0x00007ffbf5310000 - 0x00007ffbf531a000 	C:\Program Files\Java\jdk-11.0.10\bin\jimage.dll
+0x00007ffbf52b0000 - 0x00007ffbf52c6000 	C:\Program Files\Java\jdk-11.0.10\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-11.0.10\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files\Java\jdk-11.0.10\bin\server
+
+VM Arguments:
+java_command: c:\Users\kartik\.vscode\extensions\salesforce.salesforce-vscode-slds-1.4.8\lsp-0.0.13-executable.jar --PORT=62118
+java_class_path (initial): c:\Users\kartik\.vscode\extensions\salesforce.salesforce-vscode-slds-1.4.8\lsp-0.0.13-executable.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 131792192                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 2108675072                                {product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-14.0.2
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-14.0.2\bin;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\kartik\AppData\Local\Programs\Python\Python38-32;C:\Users\kartik\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Program Files\R\R-4.0.2\bin;C:\Program Files\Git\cmd;C:\Users\kartik\AppData\Local\Microsoft\WindowsApps;C:\Users\kartik\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kartik\AppData\Roaming\npm;C:\Users\kartik\AppData\Local\Microsoft\WindowsApps;C:\Users\kartik\AppData\Local\Programs\Python\Python38-32;C:\Users\kartik\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Program Files\R\R-4.0.2\bin;C:\Program Files\Salesforce CLI\bin;C:\Program Files\sfdx\bin;C:\Users\kartik\AppData\Local\GitHubDesktop\bin
+USERNAME=kartik
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.1202)
+
+CPU:total 8 (initial active 8) 
+
+Memory: 4k page, system-wide physical 8043M (1958M free)
+TotalPageFile size 13163M (AvailPageFile size 3247M)
+current process WorkingSet (physical memory assigned to process): 8M, peak: 8M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11.0.10+8-LTS-162) for windows-amd64 JRE (11.0.10+8-LTS-162), built on Dec  8 2020 16:32:57 by "mach5one" with MS VC++ 15.9 (VS2017)
+
+END.
