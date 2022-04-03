@@ -1,6 +1,6 @@
 # Food App
 
-Food ordering build on ReactJs
+Food ordering web app built on ReactJs
 
 ## Installation
 
